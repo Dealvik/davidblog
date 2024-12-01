@@ -21,9 +21,11 @@ $requiredCommands = @('git', 'hugo')
 # Check for Python command (python or python3)
 if (Get-Command 'python' -ErrorAction SilentlyContinue) {
     $pythonCommand = 'python'
-} elseif (Get-Command 'python3' -ErrorAction SilentlyContinue) {
+}
+elseif (Get-Command 'python3' -ErrorAction SilentlyContinue) {
     $pythonCommand = 'python3'
-} else {
+}
+else {
     Write-Error "Python is not installed or not in PATH."
     exit 1
 }
@@ -41,12 +43,13 @@ if (-not (Test-Path ".git")) {
     git init
     git remote set-url origin "https://github.com/Dealvik/davidblog.git"
 
-} else {
+}
+else {
     Write-Host "Git repository already initialized."
     $remotes = git remote
     if (-not ($remotes -contains 'origin')) {
         Write-Host "Adding remote origin..."
-        git remote add origin "git remote set-url origin https://github.com/Dealvik/davidblog.git
+        git remote add origin "https://github.com/Dealvik/davidblog.git
 "
     }
 }
@@ -83,7 +86,8 @@ if (-not (Test-Path "images.py")) {
 # Execute the Python script
 try {
     & $pythonCommand images.py
-} catch {
+}
+catch {
     Write-Error "Failed to process image links."
     exit 1
 }
@@ -92,7 +96,8 @@ try {
 Write-Host "Building the Hugo site..."
 try {
     hugo
-} catch {
+}
+catch {
     Write-Error "Hugo build failed."
     exit 1
 }
@@ -102,7 +107,8 @@ Write-Host "Staging changes for Git..."
 $hasChanges = (git status --porcelain) -ne ""
 if (-not $hasChanges) {
     Write-Host "No changes to stage."
-} else {
+}
+else {
     git add .
 }
 
@@ -111,7 +117,8 @@ $commitMessage = "New Blog Post on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
 $hasStagedChanges = (git diff --cached --name-only) -ne ""
 if (-not $hasStagedChanges) {
     Write-Host "No changes to commit."
-} else {
+}
+else {
     Write-Host "Committing changes..."
     git commit -m "$commitMessage"
 }
@@ -120,7 +127,8 @@ if (-not $hasStagedChanges) {
 Write-Host "Deploying to GitHub Main..."
 try {
     git push origin main
-} catch {
+}
+catch {
     Write-Error "Failed to push to Main branch."
     exit 1
 }
@@ -137,7 +145,8 @@ if ($branchExists) {
 # Perform subtree split
 try {
     git subtree split --prefix public -b hostinger-deploy
-} catch {
+}
+catch {
     Write-Error "Subtree split failed."
     exit 1
 }
@@ -145,7 +154,8 @@ try {
 # Push to hostinger branch with force
 try {
     git push origin hostinger-deploy:hostinger --force
-} catch {
+}
+catch {
     Write-Error "Failed to push to hostinger branch."
     git branch -D hostinger-deploy
     exit 1
