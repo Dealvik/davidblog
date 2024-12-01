@@ -21,8 +21,8 @@ tags:
 - Now is the time for me to become more organized. 
 - I'll start by cleaning my room after this pipeline is completed and I can seamlessly blog from Obsidian to my _blog_
 
-![[Pasted image 20241201153411.png]]
-![alt text](/images/a.png)
+
+![[Pasted image 20241201155218.png]]
 
 ```python
 import os
@@ -63,3 +63,5 @@ for filename in os.listdir(posts_dir):
 print("Markdown files processed and images copied successfully.")
 
 ```
+
+### Hello I am now updating remotely !!!
