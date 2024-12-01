@@ -5,7 +5,7 @@ $sourcePath = "C:\Users\dealv\Documents\David\posts"
 $destinationPath = "C:\Users\dealv\Documents\David\posts"
 
 # Set Github repo 
-$myrepo = "davidblog"
+$myrepo = "https://github.com/Dealvik/davidblog"
 
 # Set error handling
 $ErrorActionPreference = "Stop"
