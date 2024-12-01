@@ -5,7 +5,7 @@ $sourcePath = "C:\Users\dealv\Documents\David\posts"
 $destinationPath = "C:\Users\dealv\Documents\David\posts"
 
 # Set Github repo 
-$myrepo = "https://github.com/Dealvik/davidblog"
+$myrepo = "davidblog"
 
 # Set error handling
 $ErrorActionPreference = "Stop"
@@ -41,16 +41,14 @@ foreach ($cmd in $requiredCommands) {
 if (-not (Test-Path ".git")) {
     Write-Host "Initializing Git repository..."
     git init
-    git remote set-url origin "https://github.com/Dealvik/davidblog.git"
-
+    git remote add origin $myrepo
 }
 else {
     Write-Host "Git repository already initialized."
     $remotes = git remote
     if (-not ($remotes -contains 'origin')) {
         Write-Host "Adding remote origin..."
-        git remote add origin "https://github.com/Dealvik/davidblog.git
-"
+        git remote add origin $myrepo
     }
 }
 
