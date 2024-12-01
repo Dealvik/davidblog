@@ -27,8 +27,7 @@
 &lt;li&gt;Now is the time for me to become more organized.&lt;/li&gt;
 &lt;li&gt;I&amp;rsquo;ll start by cleaning my room after this pipeline is completed and I can seamlessly blog from Obsidian to my &lt;em&gt;blog&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[Pasted image 20241201153411.png]]
-&lt;img alt=&#34;alt text&#34; src=&#34;/images/a.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;![[Pasted image 20241201155218.png]]&lt;/p&gt;</description>
       <content>&lt;h1 id=&#34;this-is-just-the-beginning&#34;&gt;This is just the beginning&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;I&amp;rsquo;m going to upload a lot of info about my ideas and stuff that I think is important here from now on&lt;/li&gt;
@@ -43,8 +42,7 @@
 &lt;li&gt;Now is the time for me to become more organized.&lt;/li&gt;
 &lt;li&gt;I&amp;rsquo;ll start by cleaning my room after this pipeline is completed and I can seamlessly blog from Obsidian to my &lt;em&gt;blog&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[Pasted image 20241201153411.png]]
-&lt;img alt=&#34;alt text&#34; src=&#34;/images/a.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20241201155218.png]]&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; os
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; re
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; shutil
@@ -81,7 +79,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            file&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;write(content)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Markdown files processed and images copied successfully.&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;hello-i-am-now-updating-remotely-&#34;&gt;Hello I am now updating remotely !!!&lt;/h3&gt;
+</content>
     </item>
     
   </channel>
