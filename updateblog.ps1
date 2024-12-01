@@ -39,13 +39,15 @@ foreach ($cmd in $requiredCommands) {
 if (-not (Test-Path ".git")) {
     Write-Host "Initializing Git repository..."
     git init
-    git remote add origin $myrepo
+    git remote set-url origin "https://github.com/Dealvik/davidblog.git"
+
 } else {
     Write-Host "Git repository already initialized."
     $remotes = git remote
     if (-not ($remotes -contains 'origin')) {
         Write-Host "Adding remote origin..."
-        git remote add origin $myrepo
+        git remote add origin "git remote set-url origin https://github.com/Dealvik/davidblog.git
+"
     }
 }
 
